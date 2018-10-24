@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>留言板</title>
+</head>
+<body>
+  <a href="/publish">点击留言</a>
+  <ul>
+    <% posts.forEach(function (item) { %>
+      <li> <%= item.name %>说:<%= item.content  %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
