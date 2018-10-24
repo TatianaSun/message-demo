@@ -37,10 +37,14 @@ npm install express
 └── package-lock.json     npm的包锁定文件，用来锁定第三方包的版本和提高npm下载速度
 ```
 ## 设计路由
-> 请求方法 | 请求路径 |  作用
-> GET         |        /        |  渲染响应 index.html
-> GET         |  /publish |  渲染响应 publish.html
-> POST       | /publish  |  处理表单POST提交请求
+
+| 请求方法 |    请求路径   |          备注          |
+|----------|---------------|------------------------|
+| GET      | /             | 渲染响应 index.html    |
+| GET      | /publish.html | 渲染响应 publish.html  |
+| POST     | /publish.html | 处理表单 POST 提交请求 |
+|          |               |                        |
+
 
 ```javascript
 app.get('/', function (req, res) {
